@@ -11,6 +11,8 @@
 		58F94E7E28802E9100050AD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F94E7D28802E9100050AD6 /* ContentView.swift */; };
 		58F94E8028802E9200050AD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F94E7F28802E9200050AD6 /* Assets.xcassets */; };
 		58F94E8328802E9200050AD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F94E8228802E9200050AD6 /* Preview Assets.xcassets */; };
+		58F94E8A28802F4800050AD6 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F94E8928802F4800050AD6 /* Renderer.swift */; };
+		58F94E8D2881C37600050AD6 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 58F94E8C2881C37600050AD6 /* Shaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		58F94E7D28802E9100050AD6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		58F94E7F28802E9200050AD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58F94E8228802E9200050AD6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		58F94E8928802F4800050AD6 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		58F94E8B2881C0CD00050AD6 /* defenitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defenitions.h; sourceTree = "<group>"; };
+		58F94E8C2881C37600050AD6 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +58,11 @@
 			children = (
 				58F94E7B28802E9100050AD6 /* MetalVisualisationApp.swift */,
 				58F94E7D28802E9100050AD6 /* ContentView.swift */,
+				58F94E8928802F4800050AD6 /* Renderer.swift */,
+				58F94E8B2881C0CD00050AD6 /* defenitions.h */,
 				58F94E7F28802E9200050AD6 /* Assets.xcassets */,
 				58F94E8128802E9200050AD6 /* Preview Content */,
+				58F94E8C2881C37600050AD6 /* Shaders.metal */,
 			);
 			path = MetalVisualisation;
 			sourceTree = "<group>";
@@ -137,7 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F94E8D2881C37600050AD6 /* Shaders.metal in Sources */,
 				58F94E7E28802E9100050AD6 /* ContentView.swift in Sources */,
+				58F94E8A28802F4800050AD6 /* Renderer.swift in Sources */,
 				58F94E7C28802E9100050AD6 /* MetalVisualisationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +293,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vk.com.south.russian.MetalVisualisation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = MetalVisualisation/defenitions.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -312,6 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vk.com.south.russian.MetalVisualisation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = MetalVisualisation/defenitions.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
